@@ -12,6 +12,10 @@
 		C98119DA1B201C7400920B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98119D91B201C7400920B44 /* Images.xcassets */; };
 		C98119DD1B201C7400920B44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98119DB1B201C7400920B44 /* LaunchScreen.xib */; };
 		C98119E91B201C7400920B44 /* ZKIViewControllerRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98119E81B201C7400920B44 /* ZKIViewControllerRouterTests.m */; };
+		C98119F51B201DB800920B44 /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = C98119F41B201DB700920B44 /* UIViewController+Router.m */; };
+		C98119F81B201EB200920B44 /* ZKIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98119F71B201EB200920B44 /* ZKIRootViewController.m */; };
+		C98119FB1B2022DE00920B44 /* ZKISubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98119FA1B2022DE00920B44 /* ZKISubViewController.m */; };
+		C98119FE1B20246A00920B44 /* ZKIPresentiewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98119FD1B20246A00920B44 /* ZKIPresentiewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,14 @@
 		C98119E21B201C7400920B44 /* ZKIViewControllerRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKIViewControllerRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98119E71B201C7400920B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98119E81B201C7400920B44 /* ZKIViewControllerRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKIViewControllerRouterTests.m; sourceTree = "<group>"; };
+		C98119F31B201DB700920B44 /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Router.h"; sourceTree = "<group>"; };
+		C98119F41B201DB700920B44 /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Router.m"; sourceTree = "<group>"; };
+		C98119F61B201EB200920B44 /* ZKIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKIRootViewController.h; sourceTree = "<group>"; };
+		C98119F71B201EB200920B44 /* ZKIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKIRootViewController.m; sourceTree = "<group>"; };
+		C98119F91B2022DE00920B44 /* ZKISubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKISubViewController.h; sourceTree = "<group>"; };
+		C98119FA1B2022DE00920B44 /* ZKISubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKISubViewController.m; sourceTree = "<group>"; };
+		C98119FC1B20246A00920B44 /* ZKIPresentiewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKIPresentiewController.h; sourceTree = "<group>"; };
+		C98119FD1B20246A00920B44 /* ZKIPresentiewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKIPresentiewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +88,18 @@
 		C98119C81B201C7400920B44 /* ZKIViewControllerRouter */ = {
 			isa = PBXGroup;
 			children = (
+				C98119F21B201DB700920B44 /* UIViewController+Router */,
 				C98119CD1B201C7400920B44 /* AppDelegate.h */,
 				C98119CE1B201C7400920B44 /* AppDelegate.m */,
 				C98119D91B201C7400920B44 /* Images.xcassets */,
 				C98119DB1B201C7400920B44 /* LaunchScreen.xib */,
 				C98119C91B201C7400920B44 /* Supporting Files */,
+				C98119F61B201EB200920B44 /* ZKIRootViewController.h */,
+				C98119F71B201EB200920B44 /* ZKIRootViewController.m */,
+				C98119F91B2022DE00920B44 /* ZKISubViewController.h */,
+				C98119FA1B2022DE00920B44 /* ZKISubViewController.m */,
+				C98119FC1B20246A00920B44 /* ZKIPresentiewController.h */,
+				C98119FD1B20246A00920B44 /* ZKIPresentiewController.m */,
 			);
 			path = ZKIViewControllerRouter;
 			sourceTree = "<group>";
@@ -110,6 +129,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		C98119F21B201DB700920B44 /* UIViewController+Router */ = {
+			isa = PBXGroup;
+			children = (
+				C98119F31B201DB700920B44 /* UIViewController+Router.h */,
+				C98119F41B201DB700920B44 /* UIViewController+Router.m */,
+			);
+			path = "UIViewController+Router";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -210,8 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98119F51B201DB800920B44 /* UIViewController+Router.m in Sources */,
 				C98119CF1B201C7400920B44 /* AppDelegate.m in Sources */,
+				C98119FE1B20246A00920B44 /* ZKIPresentiewController.m in Sources */,
 				C98119CC1B201C7400920B44 /* main.m in Sources */,
+				C98119FB1B2022DE00920B44 /* ZKISubViewController.m in Sources */,
+				C98119F81B201EB200920B44 /* ZKIRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
