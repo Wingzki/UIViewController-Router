@@ -22,8 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    ZKIRootViewController *rootVC = [[ZKIRootViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    ZKIRootViewController *rootVC  = [[ZKIRootViewController alloc] init];
+    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     
     return YES;
